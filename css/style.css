@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid green;
+}
+.covidtoday-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.covidtoday-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.icon {
+    color: white;
+    font-size: 30px;
+}
+.covidtoday-item p {
+    margin-bottom: 10px;
+}
+.red {
+    background-color: #ff4d4d;
+    color: white;
+}
+.black {
+    background-color: #444444;
+    color: #fff;
+}
+.green {
+    background-color: #5AC244;
+    color: #fff;
+    
+}
+img {
+    display: block;
+    width: 100%;
+    
+}
+.covid {
+    margin-top: 20px;
+}
+.covid h1 {
+    margin-bottom: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.covid-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.covid-item {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.covid-item h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.covidtoday-update {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-top: 5px;
+}
+.covidtoday-update a {
+    text-decoration: none;
+}
+.text-green {
+    color: green;
+}
+.text-yellow {
+    color: #DCC34B;
+}
+.text-red {
+    color: red;
+}
+@media screen and (max-width: 700px) {
+    .covidtoday-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .covid-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .covid-item p {
+        margin-bottom: 20px;
+    }
+    .covid {
+        margin-top: 40px;
+    }
+    .covid-item h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

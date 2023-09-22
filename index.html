@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.กำลังโหลดข้อมูล">
+        <title>โควิด 19</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
+        <!-- font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <header class="logo">
+            <div class="container">
+                <h1>โควิด 19 (COVID-19)</h1>
+            </div>
+            
+        </header>
+
+        <section>
+            <div class="container">
+
+                <div class="covidtoday">
+                    <div class="covidtoday-grid">
+                        <div class="covidtoday-item red">
+                            <div class="icon">
+                                <i class="fas fa-virus lg"></i>
+                            </div>
+                            <h3>ผู้ติดเชื้อรายใหม่</h3>
+                            <p id="new_case">กำลังโหลดข้อมูล</p>
+                            <h3>ผู้ติดเชื้อทั้งหมด</h3>
+                            <p id="total_case">กำลังโหลดข้อมูล</p>
+                            
+                        </div>
+                        <div class="covidtoday-item black">
+                            <div class="icon">
+                                <i class="fas fa-dove"></i>
+                            </div>
+                            <h3>ผู้เสียชีวิตรายใหม่</h3>
+                            <p id="new_death">กำลังโหลดข้อมูล</p>
+                            <h3>ผู้เสียชีวิตทั้งหมด</h3>
+                            <p id="total_death">กำลังโหลดข้อมูล</p>
+                        </div>
+                        <div class="covidtoday-item green">
+                            <div class="icon">
+                                <i class="far fa-hospital"></i>
+                            </div>
+                            <h3>หายป่วยกลับบ้าน</h3>
+                            <p id="new_recovered">กำลังโหลดข้อมูล</p>
+                            <h3>ผู้ป่วยกำลังรักษา</h3>
+                            <p id="total_healing">กำลังโหลดข้อมูล</p>
+                        </div>
+                    </div>
+                    <div class="covidtoday-update">
+                        <h4 id="update_date">Update: กำลังโหลดข้อมูล</h4>
+                        <p>อ้างอิง : <a href="https://covid19.ddc.moph.go.th" target="_blank">covid19.ddc.moph.go.th</a> </p>
+                    </div>
+                    
+                </div>
+
+                <div class="covid">
+                    <h1>อาการของผู้ติดเชื้อโควิด</h1>
+                    <div class="covid-grid">
+                        <div class="covid-item">
+                            <img src="img\Green.jpg" alt="">
+                            <h2 class="text-green">สีเขียว</h2>
+                            <p>ระดับหนึ่ง หากเคสเขียว คือ อาการน้อย
+                                หรือไอนิดหน่อย เจ็บคอ ไข้ แต่ยังกินได้
+                                ไม่เหนื่อยไม่แน่นหน้าอก</p>
+                        </div>
+                        <div class="covid-item">
+                            <img src="img\yellow.jpg" alt="">
+                            <h2 class="text-yellow">สีเหลือง</h2>
+                            <p>ระดับสอง อาการสีเหลืองหรือส้ม เช่น
+                                แน่นหน้าอกหายใจไม่สะดวกขณะทำกิจกรรม หายใจเร็ว
+                                หายใจเหนื่อย หรือหายใจลำบาก เวลาไอแล้วเหนื่อย
+                                อ่อนเพลีย เวียนศีรษะ ปอดอักเสบ, ถ่ายเหลวมากกว่า
+                                3 ครั้งต่อวัน ร่วมกับอาการหน้ามืด วิงเวียน
+                                หรือมีความเสี่ยง เช่น มีโรคเรื้อรัง ไตวาย
+                                ความดัน ไขมัน เส้นเลือดในสมอง โรคหัวใจ
+                                ผู้ป่วยติดเตียง </p>
+                        </div>
+                        <div class="covid-item">
+                            <img src="img\red.jpg" alt="">
+                            <h2 class="text-red">สีแดง</h2>
+                            <p>ระดับสาม อาการสีแดง อาการสีแดง คือ
+                                ผู้ป่วยโควิดอาการหนัก
+                                <br>
+                                - หอบเหนื่อย พูดไม่เป็นประโยคขณะสนทนา
+                                <br>
+                                - แน่นหน้าอกตลอดเวลา หายใจแล้วเจ็บหน้าอก
+                                <br>
+                                - ซึม เรียกไม่รู้สึกตัว หรือตอบสนองช้า
+                                <br>
+                                - ปอดบวมที่มี hypoxic (risting O2 saturation
+                                < 96%) หรือมีภาวะลดลงของออกซิเจน SpO2
+                                    มากกว่าหรือเท่ากับ 3%
+                                    ของค่าที่วัดได้ครั้งแรกขณะออกแรง
+                                    หรือภาพรังสีทรวงอกมี progression ของ
+                                    pulmonary infiltrates
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/index.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </body>
+</html>
